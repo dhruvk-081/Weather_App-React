@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/weatherData/:city" element={<WeatherData />} />
+      <Route path="/weather/:city" element={<WeatherData />} />
       <Route path="*" element={<div>🚫Error: ❌Page Not Found.❌</div>} />
     </Routes>
   );

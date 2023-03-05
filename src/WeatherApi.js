@@ -2,7 +2,7 @@ const API_KEY = "f38c69f0c94db265131bf231f7446868";
 
 const iconURL = (iconId) => `https://openweathermap.org/img/wn/${iconId}@2x.png`;
 
-const weatherData = async (city, units = "metric") => {
+const WeatherApi = async (city, units = "metric") => {
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${units}`;
 
   const data = await fetch(URL)
@@ -37,4 +37,4 @@ const weatherData = async (city, units = "metric") => {
   };
 };
 
-export { weatherData };
+export { WeatherApi };

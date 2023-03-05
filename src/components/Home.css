@@ -1,5 +1,6 @@
 .searchContainer {
   background-color: #000;
+  min-height: 100vh;
   color: white;
   padding: 50px;
 }
