@@ -8,7 +8,7 @@ import { weatherData } from "../WeatherApi";
 const Home = () => {
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
-  const [city, setCity] = useState("Paris");
+  const [city, setCity] = useState({});
   const [value, setValue] = useState("");
   // const [bg, setBg] = useState();
 
